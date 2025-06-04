@@ -4,7 +4,7 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
-  base: "/cerevynai.github.io/",  // Set base path for GitHub Pages Project site
+  base: "/",  // Set base path to root for GitHub Pages with Custom Domain
   server: {
     host: "::",
     port: 8080,
