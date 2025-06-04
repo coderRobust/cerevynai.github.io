@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import Layout from '@/components/Layout';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
@@ -49,7 +48,7 @@ const Contact = () => {
             {/* Contact Form */}
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-8">Send Us a Message</h2>
-              
+
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
@@ -67,7 +66,7 @@ const Contact = () => {
                       placeholder="Your full name"
                     />
                   </div>
-                  
+
                   <div>
                     <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
                       Email Address *
@@ -84,7 +83,7 @@ const Contact = () => {
                     />
                   </div>
                 </div>
-                
+
                 <div>
                   <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-2">
                     Company/Organization
@@ -99,7 +98,7 @@ const Contact = () => {
                     placeholder="Your company name"
                   />
                 </div>
-                
+
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
                     Message *
@@ -115,7 +114,7 @@ const Contact = () => {
                     placeholder="Tell us about your project and how we can help..."
                   />
                 </div>
-                
+
                 <button
                   type="submit"
                   className="w-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-8 py-4 rounded-lg font-semibold hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 flex items-center justify-center space-x-2 group"
@@ -129,11 +128,11 @@ const Contact = () => {
             {/* Contact Information */}
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-8">Let's Connect</h2>
-              
+
               <div className="space-y-8">
                 <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8">
                   <h3 className="text-xl font-semibold text-gray-900 mb-6">Get in Touch</h3>
-                  
+
                   <div className="space-y-6">
                     <div className="flex items-start space-x-4">
                       <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center flex-shrink-0">
@@ -141,35 +140,13 @@ const Contact = () => {
                       </div>
                       <div>
                         <h4 className="font-semibold text-gray-900 mb-1">Email Us</h4>
-                        <p className="text-gray-600">hello@cerevynai.com</p>
+                        <p className="text-gray-600">info@cerevynai.com</p>
                         <p className="text-gray-600">support@cerevynai.com</p>
-                      </div>
-                    </div>
-                    
-                    <div className="flex items-start space-x-4">
-                      <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-600 rounded-xl flex items-center justify-center flex-shrink-0">
-                        <Phone className="w-6 h-6 text-white" />
-                      </div>
-                      <div>
-                        <h4 className="font-semibold text-gray-900 mb-1">Call Us</h4>
-                        <p className="text-gray-600">+1 (555) 123-4567</p>
-                        <p className="text-sm text-gray-500">Mon-Fri 9AM-6PM EST</p>
-                      </div>
-                    </div>
-                    
-                    <div className="flex items-start space-x-4">
-                      <div className="w-12 h-12 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-xl flex items-center justify-center flex-shrink-0">
-                        <MapPin className="w-6 h-6 text-white" />
-                      </div>
-                      <div>
-                        <h4 className="font-semibold text-gray-900 mb-1">Visit Us</h4>
-                        <p className="text-gray-600">123 AI Innovation Drive</p>
-                        <p className="text-gray-600">San Francisco, CA 94105</p>
                       </div>
                     </div>
                   </div>
                 </div>
-                
+
                 <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-8">
                   <h3 className="text-xl font-semibold text-gray-900 mb-4">Response Time</h3>
                   <p className="text-gray-600 leading-relaxed">
@@ -191,7 +168,7 @@ const Contact = () => {
               Quick answers to common questions about our AI solutions and services.
             </p>
           </div>
-          
+
           <div className="space-y-8">
             {[
               {
