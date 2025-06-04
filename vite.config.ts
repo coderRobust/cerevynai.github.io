@@ -4,7 +4,7 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
-  base: "/ai-web-horizon/",  // 👈 required for GitHub Pages under repo
+  base: "/cerevynai.github.io/",  // Set base path for GitHub Pages Project site
   server: {
     host: "::",
     port: 8080,
