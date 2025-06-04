@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Layout from '@/components/Layout';
-import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import { Mail, Send } from 'lucide-react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -12,9 +12,8 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
+    // Handle form submission (e.g. send to backend or Formspree)
     console.log('Form submitted:', formData);
-    // Reset form
     setFormData({ name: '', email: '', company: '', message: '' });
   };
 
@@ -48,7 +47,6 @@ const Contact = () => {
             {/* Contact Form */}
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-8">Send Us a Message</h2>
-
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
@@ -128,11 +126,10 @@ const Contact = () => {
             {/* Contact Information */}
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-8">Let's Connect</h2>
-
               <div className="space-y-8">
+                {/* Email Block */}
                 <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8">
                   <h3 className="text-xl font-semibold text-gray-900 mb-6">Get in Touch</h3>
-
                   <div className="space-y-6">
                     <div className="flex items-start space-x-4">
                       <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center flex-shrink-0">
@@ -140,17 +137,18 @@ const Contact = () => {
                       </div>
                       <div>
                         <h4 className="font-semibold text-gray-900 mb-1">Email Us</h4>
-                        <p className="text-gray-600">information@cerevynai.com</p>
+                        <p className="text-gray-600">hello@cerevynai.com</p>
                         <p className="text-gray-600">support@cerevynai.com</p>
                       </div>
                     </div>
                   </div>
                 </div>
 
+                {/* Response Time Block */}
                 <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-8">
                   <h3 className="text-xl font-semibold text-gray-900 mb-4">Response Time</h3>
                   <p className="text-gray-600 leading-relaxed">
-                    We typically respond to all inquiries within 24 hours during business days. For urgent matters, please call us directly.
+                    We typically respond to all inquiries within 24 hours during business days. For urgent matters, please email us directly.
                   </p>
                 </div>
               </div>
@@ -173,20 +171,24 @@ const Contact = () => {
             {[
               {
                 question: "How quickly can we implement your AI solutions?",
-                answer: "Implementation timelines vary based on complexity, but most projects can be deployed within 2-8 weeks, including integration and testing phases."
+                answer:
+                  "Implementation timelines vary based on complexity, but most projects can be deployed within 2-8 weeks, including integration and testing phases.",
               },
               {
                 question: "Do you provide ongoing support and maintenance?",
-                answer: "Yes, we offer comprehensive support packages including 24/7 monitoring, regular updates, and continuous optimization to ensure peak performance."
+                answer:
+                  "Yes, we offer comprehensive support packages including 24/7 monitoring, regular updates, and continuous optimization to ensure peak performance.",
               },
               {
                 question: "Is our data secure with your AI platform?",
-                answer: "Absolutely. We employ enterprise-grade security measures, including end-to-end encryption, secure data centers, and compliance with industry standards like SOC 2 and GDPR."
+                answer:
+                  "Absolutely. We employ enterprise-grade security measures, including end-to-end encryption, secure data centers, and compliance with industry standards like SOC 2 and GDPR.",
               },
               {
                 question: "Can your solutions integrate with our existing systems?",
-                answer: "Yes, our AI tools are designed with API-first architecture to seamlessly integrate with most existing enterprise systems and workflows."
-              }
+                answer:
+                  "Yes, our AI tools are designed with API-first architecture to seamlessly integrate with most existing enterprise systems and workflows.",
+              },
             ].map((faq, index) => (
               <div key={index} className="bg-white rounded-xl p-6 shadow-lg">
                 <h3 className="text-lg font-semibold text-gray-900 mb-3">{faq.question}</h3>
