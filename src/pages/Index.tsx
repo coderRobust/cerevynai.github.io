@@ -45,7 +45,7 @@ const Index = () => {
           <div className="flex justify-center mb-8">
             <div className="bg-white p-6 rounded-3xl shadow-2xl shadow-blue-500/25 hover:scale-105 transition-all duration-500 hover:shadow-blue-500/40">
               <img
-                src="/cerevynai-logo.png"
+                src="/cerevyn-logo.png"
                 alt="CerevynAI Logo"
                 className="h-24 w-auto"
               />
