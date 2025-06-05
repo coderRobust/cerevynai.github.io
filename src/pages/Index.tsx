@@ -36,7 +36,7 @@ const Index = () => {
     <Layout>
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-100" />
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-purple-100" />
         <div className="absolute inset-0 opacity-40" style={{
           backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.03'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
         }} />
@@ -45,7 +45,7 @@ const Index = () => {
           <div className="flex justify-center mb-8">
             <div className="bg-white p-6 rounded-3xl shadow-2xl shadow-blue-500/25 hover:scale-105 transition-all duration-500 hover:shadow-blue-500/40">
               <img
-                src="/lovable-uploads/30c84560-900f-4e62-bcf5-21d656096be1.png"
+                src="/cerevynai-logo.png"
                 alt="CerevynAI Logo"
                 className="h-24 w-auto"
               />
@@ -53,7 +53,7 @@ const Index = () => {
           </div>
 
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
-            <span className="bg-gradient-to-r from-blue-700 via-indigo-700 to-purple-700 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-blue-700 to-purple-700 bg-clip-text text-transparent">
               CerevynAI
             </span>
           </h1>
@@ -77,7 +77,7 @@ const Index = () => {
 
             <Link
               to="/services"
-              className="group border-2 border-blue-500 text-blue-600 px-8 py-4 rounded-xl font-semibold hover:border-blue-500 hover:text-blue-600 transition-all duration-300 flex items-center space-x-2 hover:scale-105"
+              className="group border-2 border-blue-300 text-gray-700 px-8 py-4 rounded-xl font-semibold hover:border-blue-500 hover:text-blue-600 transition-all duration-300 flex items-center space-x-2 hover:scale-105"
             >
               <span>Explore Our Solutions</span>
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -112,7 +112,7 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-gradient-to-br from-blue-500 via-indigo-500 to-purple-600 relative overflow-hidden">
+      <section className="py-24 bg-gradient-to-br from-blue-500 to-purple-600 relative overflow-hidden">
         <div className="absolute inset-0" style={{
           backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
         }} />
