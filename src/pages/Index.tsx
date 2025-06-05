@@ -53,7 +53,7 @@ const Index = () => {
           </div>
 
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
-            <span className="bg-gradient-to-r from-blue-700 to-purple-700 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-[#507DFF] to-[#A067F6] bg-clip-text text-transparent">
               CerevynAI
             </span>
           </h1>
@@ -69,7 +69,7 @@ const Index = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link
               to="/get-started"
-              className="group bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-xl font-semibold hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 flex items-center space-x-2 hover:scale-105"
+              className="group bg-gradient-to-r from-[#507DFF] to-[#A067F6] text-white px-8 py-4 rounded-xl font-semibold hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 flex items-center space-x-2 hover:scale-105"
             >
               <span>Get Started Free</span>
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -77,7 +77,7 @@ const Index = () => {
 
             <Link
               to="/services"
-              className="group border-2 border-blue-300 text-gray-700 px-8 py-4 rounded-xl font-semibold hover:border-blue-500 hover:text-blue-600 transition-all duration-300 flex items-center space-x-2 hover:scale-105"
+              className="group border-2 border-[#C5D4F8] text-[#507DFF] px-8 py-4 rounded-xl font-semibold hover:border-blue-500 hover:text-blue-600 transition-all duration-300 flex items-center space-x-2 hover:scale-105"
             >
               <span>Explore Our Solutions</span>
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -112,7 +112,7 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-gradient-to-br from-blue-500 to-purple-600 relative overflow-hidden">
+      <section className="py-24 bg-gradient-to-br from-[#E0E7FF] to-[#F3E8FF] relative overflow-hidden">
         <div className="absolute inset-0" style={{
           backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
         }} />
